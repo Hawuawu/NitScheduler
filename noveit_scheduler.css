@@ -1,0 +1,99 @@
+.scheduler_time_title {
+    width: 100%;
+    position: relative;
+    color: #1EB999;
+}
+
+.scheduler_days_title {
+    position: relative;
+    float:left;
+    color: #1EB999;
+} 
+
+.scheduler_days_title .day {
+    padding-top: 5px;
+   // width: 100%;
+ //   text-align: justify;
+}
+
+.scheduler_days_title .day_in_week {
+     width: 25px;
+  display: inline-block;
+  text-align: left;
+}
+
+.scheduler_days_title .minus {
+      width: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.scheduler_content {
+    position: relative;
+    float:left;
+    border: 1px solid #C0E3DD;
+}   
+
+
+
+.scheduler_content .event {  
+    background: #c4d958;
+    cursor: pointer;
+}
+
+.scheduler_content .cell {
+    border-color: #C0E3DD;
+}
+
+body {
+    background: #34495e;
+}
+
+.scheduler {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 2px rgba(49,64,87,1);
+    -moz-box-shadow: 10px 10px 5px 2px rgba(49,64,87,1);
+    box-shadow: 10px 10px 5px 2px rgba(49,64,87,1);
+    background: white;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.event_bubble {
+    position: relative;
+    width: 170px;
+    min-height: 25px;
+    padding: 10px;
+    background: #c4d958;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.event_bubble .time_row {
+    display: block;
+    color: white;
+}
+
+.event_bubble span.event_row {
+    
+    display: block;
+    color: white;
+    
+}
+
+.event_bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #c4d958 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+

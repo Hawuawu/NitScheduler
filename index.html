@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- HTML Codes by Quackit.com -->
+        <title>Title appears in the browser's title bar...</title>
+        <link rel="stylesheet" href="noveit_scheduler.css"></link>
+        <script  type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+        <script type="text/javascript" src="noveit_scheduler.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".scheduler").nitScheduler({
+                    start: new Date(2015, 2, 30, 0, 0, 0, 0),
+                    end: new Date(2015, 3, 5, 23, 59, 0, 0),
+                    data: [
+                        {start: new Date(2015, 2, 29, 23, 15, 0, 0), end: new Date(2015, 2, 30, 3, 35, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 2, 31, 8, 22, 0, 0), end: new Date(2015, 2, 31, 12, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 1, 11, 15, 0, 0), end: new Date(2015, 3, 2, 8, 00, 0, 0), event: "2"},
+                        {start: new Date(2015, 3, 2, 9, 15, 0, 0), end: new Date(2015, 3, 2, 15, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 3, 8, 00, 0, 0), end: new Date(2015, 3, 3, 12, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 3, 13, 00, 0, 0), end: new Date(2015, 3, 3, 16, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 3, 0, 26, 0, 0), end: new Date(2015, 3, 3, 3, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 4, 14, 15, 0, 0), end: new Date(2015, 3, 4, 16, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 4, 13, 15, 0, 0), end: new Date(2015, 3, 4, 14, 00, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 4, 19, 15, 0, 0), end: new Date(2015, 3, 4, 23, 19, 0, 0), event: "blabla"},
+                        {start: new Date(2015, 3, 5, 19, 0, 0, 0), end: new Date(2015, 3, 6, 1, 00, 0, 0), event: "blabla"}
+                    ]
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="scheduler" style="width: 400px;"></div>
+        <div class="scheduler" style="width: 640px;"></div>
+        <div class="scheduler" style="width: 890px;"></div>
+        <div class="scheduler" style="width: 1640px"></div>
+    </body>
+</html>
+
